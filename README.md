@@ -1,2 +1,2 @@
 # code_camp
-plowing through freecodecamp.
+Plowing through codecamp.

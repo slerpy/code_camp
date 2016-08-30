@@ -33,11 +33,11 @@ function updateRecords(id, prop, value) {
         if (prop !== "tracks") {
             collection[id][prop] = value;
         } else {
-            if (collection[id].tracks) {
-                collection[id].tracks.push(value);
+            if (collection[id][prop]) {
+                collection[id][prop].push(value);
             } else {
-                collection[id].tracks = [];
-                collection[id].tracks.push(value);
+                collection[id][prop] = [];
+                collection[id][prop].push(value);
             }
         }
     } else {
